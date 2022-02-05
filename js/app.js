@@ -78,8 +78,7 @@ function picnicBudget(member) {
         const second100PersonsCost = 100 * second;
         const people = member - 200;
         const peopleMultiply = people * over;
-        const totalCost =
-          first100PersonsCost + second100PersonsCost + peopleMultiply;
+        const totalCost =  first100PersonsCost + second100PersonsCost + peopleMultiply;
         return totalCost;
       }
     } else {
@@ -87,47 +86,30 @@ function picnicBudget(member) {
     }
   }
   
-  const picnicBudgetTotal = picnicBudget(101);
-  console.log(picnicBudgetTotal);
+  const picnicBudgetTotal = picnicBudget(0);
+  //console.log(picnicBudgetTotal);
 
 
 
 
 
 //problem - 4 
-function oddFriend(friends){  
-  for(let i = 0 ; i<friends.length ; i++){
-      if(friends[i].length % 2 == 1){
-          return friends[i]
+function oddFriend(friends) {
+    let oddFriendName = [];
+  
+    for (let i = 0; i < friends.length; i++) {
+      // to find odd name in array
+      if (friends[i].length % 2 != 0) {
+        
+         oddFriendName = friends[i];
+        break;
       }
+    }
+    return oddFriendName;
   }
-}
-
-let friendList = [ 'Rahman','taki' , 'nof' ,'asfak' , 'Nazmul','Billal','Nahid','Hasib','samsul islam shipon', ];
-let fr = oddFriend(friendList);
-console.log(fr)
-
-
-
-
-
-
-// function oddFriend(friends) {
-//     let firstOddFriendName = [];
   
-//     for (let i = 0; i < friends.length; i++) {
-//       // to find odd name in array
-//       if (friends[i].length % 2 != 0) {
-//         //   store first odd name
-//         firstOddFriendName = friends[i];
-//         break;
-//       }
-//     }
-//     return firstOddFriendName;
-//   }
-  
-//   const result1 = oddFriend(['A','Shipon','Rabeka', 'Hamim' ,'jara Islam', 'Ali Sharif','nazmul',]);
-//   console.log(result1);
+  const friendResult = oddFriend(['Tasnuva' , 'Arif' , 'Sanaullah' , 'Anika']);
+  //console.log(friendResult);
   
 
 
